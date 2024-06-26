@@ -19,6 +19,14 @@
 
 We create **MMEvalPro** for more accurate and efficent evaluation for Large Multimodal Models. It is designed to avoid Type-I errors through a **trilogy** evaluation pipeline and more rigorous metrics. For each original question from existing benchmarks, human annotators augment it by creating one **perception** question and one **knowledge** anchor question through a meticulous annotation process. It comprises **2,068** question triplets, totaling **6,204** distinct questions.
 
+## Trilogy Evaluation
+
+For each original question from ScienceQA, MathVista, or MMMU, MMEvalPro annotates an additional perception question and a knowledge question. Only if a multimodal model can simultaneously answer all three questions, we regard it demonstrates a true understanding of the problem rather than merely exploiting shortcuts. We introduce a new metric called **Genuine Accuracy** to evaluate the performance of models in MMEvalPro.
+
+<div align=center>
+<img src="./assets/examples.png"/>
+Trilogy Evaluation Examples in MMEvalPro
+</div>
 
 
 
@@ -52,6 +60,7 @@ The output for each instance should be saved in json file, in the format of
     }
 ]
 ```
+The `index`,`answer`,`triplet_id`,`eval_type` should be indentical to the ones in the dataset.
 
 Then you can run the `./auto_score.py` to get the scores.
 
@@ -61,6 +70,13 @@ python auto_score.py \
     --model_output  ./demo_output.json \  # model output file in json format
     --output_path  ./demo_score.json \  # path to save the result
 ```
+
+## Leaderboard
+<div align=center>
+<img src="./assets/results.png"/>
+All LLMs perform poorly in the benchmark. Best performing LMM (Qwen-VL-Max, GPT4-o) still lag behind human by 30% in average Genuine Accuracy of MMEvalPro. 
+</div>
+
 
 ## Acknowledgements
 
@@ -77,7 +93,4 @@ The copyright of the images and the original questions belongs to the authors of
 
 ## Citation
 
-If our benchmark is useful in your research or product, please kindly cite
-```bib
-
-```
+Coming Soon~
