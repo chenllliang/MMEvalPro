@@ -60,7 +60,7 @@ The output for each instance should be saved in json file, in the format of
     }
 ]
 ```
-The `index`,`answer`,`triplet_id`,`eval_type` should be indentical to the ones in the dataset.
+The `index`,`answer`,`triplet_id`,`eval_type` should be indentical to the ones in the [dataset](https://huggingface.co/datasets/MM-Diagnose/MMEvalPro).
 
 Then you can run the `./auto_score.py` to get the scores.
 
