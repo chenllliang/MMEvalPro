@@ -2,7 +2,7 @@
 
 <p align="center">
 
-<a href="https://docs.qq.com/sheet/DVUd4WUpGRHRqUnNV">
+<a href="https://mmevalpro.github.io/">
 <img alt="Static Badge" src="https://img.shields.io/badge/Homepage-MMEvalPro-blue">
 </a>
 
