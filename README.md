@@ -10,7 +10,7 @@
 <img alt="Static Badge" src="https://img.shields.io/badge/ArXiv-2407.xxxxx-red">
 
 <a href="https://huggingface.co/datasets/MM-Diagnose/MMEvalPro">
-<img alt="Static Badge" src="https://img.shields.io/badge/HuggingFace-MMEvalPro-yellow">
+<img alt="Static Badge" src="https://img.shields.io/badge/HuggingFace Dataset-MMEvalPro-yellow">
 </a>
 
 </p>
