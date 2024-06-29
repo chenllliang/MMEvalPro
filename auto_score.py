@@ -18,23 +18,23 @@ def cal_score(model_outputs):
     correct_triplets = 0
     total_triplets = len(triplets)
     for _, entries in triplets.items():
-        if all(entry['answer'] in entry['model_output'] for entry in entries):
+        if all(entry['answer'] == entry['model_output'] for entry in entries):
             correct_triplets += 1
     genuine_accuracy_score = correct_triplets / total_triplets
 
     # Average accuracy
-    average_score = sum([output['answer'] in output['model_output'] for output in model_outputs]) / len(model_outputs)
+    average_score = sum([output['answer'] == output['model_output'] for output in model_outputs]) / len(model_outputs)
 
     # Origin accuracy
-    o_score = sum([output['answer'] in output['model_output'] for output in model_outputs \
+    o_score = sum([output['answer'] == output['model_output'] for output in model_outputs \
         if output['eval_type'] == 'Origin']) / len([output for output in model_outputs if output['eval_type'] == 'Origin'])
 
     # Perception accuracy
-    p_score = sum([output['answer'] in output['model_output'] for output in model_outputs \
+    p_score = sum([output['answer'] == output['model_output'] for output in model_outputs \
         if output['eval_type'] == 'Perception']) / len([output for output in model_outputs if output['eval_type'] == 'Perception'])
 
     # Knowledge accuracy
-    k_score = sum([output['answer'] in output['model_output'] for output in model_outputs \
+    k_score = sum([output['answer'] == output['model_output'] for output in model_outputs \
         if output['eval_type'] == 'Knowledge']) / len([output for output in model_outputs if output['eval_type'] == 'Knowledge'])
 
     scores = {
