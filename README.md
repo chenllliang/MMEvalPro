@@ -34,6 +34,10 @@ Trilogy Evaluation Examples in MMEvalPro
 
 🔔 To automatically evaluate a model on the dataset and compute the genuine accuracy, average accuracy and different analysis metric, we provide an example code to compute the scores given model output and groundtruth labels.
 
+First, download the dataset from <a href="https://huggingface.co/datasets/MM-Diagnose/MMEvalPro">
+<img alt="Static Badge" src="https://img.shields.io/badge/HuggingFace Dataset-MMEvalPro-yellow">
+</a>.
+
 The output for **all questions** should be saved in json file, following `./demo_model_output.json`
 ```json
 [
