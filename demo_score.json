@@ -1,9 +1,37 @@
-[
-    {
-        "genuine_accuracy_score": 1.0,
-        "average_score": 23.0,
-        "origin_score": 8.0,
-        "perception_score": 9.67,
-        "knowledge": 5.33
+{
+    "MMMU": {
+        "genuine_accuracy_score": 18.88,
+        "average_score": 54.87,
+        "origin_score": 46.61,
+        "perception_score": 64.01,
+        "knowledge_score": 53.98
+    },
+    "MathVista": {
+        "genuine_accuracy_score": 16.85,
+        "average_score": 53.15,
+        "origin_score": 57.41,
+        "perception_score": 51.11,
+        "knowledge_score": 50.93
+    },
+    "ScienceQA": {
+        "genuine_accuracy_score": 49.01,
+        "average_score": 77.07,
+        "origin_score": 84.27,
+        "perception_score": 72.92,
+        "knowledge_score": 74.03
+    },
+    "Macro_Average": {
+        "genuine_accuracy_score": 28.25,
+        "average_score": 61.7,
+        "origin_score": 62.76,
+        "perception_score": 62.68,
+        "knowledge_score": 59.65
+    },
+    "Micro_Average": {
+        "genuine_accuracy_score": 36.11,
+        "average_score": 67.51,
+        "origin_score": 71.52,
+        "perception_score": 66.0,
+        "knowledge_score": 65.01
     }
-]
+}
