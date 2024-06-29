@@ -34,41 +34,83 @@ Trilogy Evaluation Examples in MMEvalPro
 
 🔔 To automatically evaluate a model on the dataset and compute the genuine accuracy, average accuracy and different analysis metric, we provide an example code to compute the scores given model output and groundtruth labels.
 
-The output for each instance should be saved in json file, in the format of
+The output for all questions should be saved in json file, following `./demo_model_output.json`
 ```json
 [
     {
-        "index": 1,
+        "index": 0,
         "model_output": "A",
         "answer": "B",
         "triplet_id": 1,
         "eval_type": "Origin"
     },
     {
-        "index": 2,
+        "index": 1,
         "model_output": "A",
         "answer": "B",
         "triplet_id": 1,
         "eval_type": "Perception"
     },
     {
-        "index": 3,
+        "index": 2,
         "model_output": "A",
         "answer": "B",
         "triplet_id": 1,
         "eval_type": "Knowledge"
     }
+
+...
 ]
 ```
-The `index`,`answer`,`triplet_id`,`eval_type` should be indentical to the ones in the [dataset](https://huggingface.co/datasets/MM-Diagnose/MMEvalPro).
 
 Then you can run the `./auto_score.py` to get the scores.
 
-
 ```bash
 python auto_score.py \ 
-    --model_output  ./demo_output.json \  # model output file in json format
+    --model_output  ./demo_model_output.json \  # model output file in json format
     --output_path  ./demo_score.json \  # path to save the result
+```
+
+The overall score file looks like below:
+
+```json
+{
+    "MMMU": {
+        "genuine_accuracy_score": 18.88,
+        "average_score": 54.87,
+        "origin_score": 46.61,
+        "perception_score": 64.01,
+        "knowledge_score": 53.98
+    },
+    "MathVista": {
+        "genuine_accuracy_score": 16.85,
+        "average_score": 53.15,
+        "origin_score": 57.41,
+        "perception_score": 51.11,
+        "knowledge_score": 50.93
+    },
+    "ScienceQA": {
+        "genuine_accuracy_score": 49.01,
+        "average_score": 77.07,
+        "origin_score": 84.27,
+        "perception_score": 72.92,
+        "knowledge_score": 74.03
+    },
+    "Macro_Average": {
+        "genuine_accuracy_score": 28.25,
+        "average_score": 61.7,
+        "origin_score": 62.76,
+        "perception_score": 62.68,
+        "knowledge_score": 59.65
+    },
+    "Micro_Average": {
+        "genuine_accuracy_score": 36.11,
+        "average_score": 67.51,
+        "origin_score": 71.52,
+        "perception_score": 66.0,
+        "knowledge_score": 65.01
+    }
+}
 ```
 
 ## Leaderboard
