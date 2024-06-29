@@ -76,39 +76,39 @@ The overall score file looks like below:
 ```json
 {
     "MMMU": {
-        "genuine_accuracy_score": 18.88,
-        "average_score": 54.87,
-        "origin_score": 46.61,
-        "perception_score": 64.01,
-        "knowledge_score": 53.98
+        "genuine_accuracy_score": 17.11,
+        "average_score": 52.7,
+        "origin_score": 45.13,
+        "perception_score": 62.24,
+        "knowledge_score": 50.74
     },
     "MathVista": {
-        "genuine_accuracy_score": 16.85,
-        "average_score": 53.15,
-        "origin_score": 57.41,
-        "perception_score": 51.11,
-        "knowledge_score": 50.93
+        "genuine_accuracy_score": 15.37,
+        "average_score": 51.67,
+        "origin_score": 55.93,
+        "perception_score": 50.37,
+        "knowledge_score": 48.7
     },
     "ScienceQA": {
-        "genuine_accuracy_score": 49.01,
-        "average_score": 77.07,
-        "origin_score": 84.27,
-        "perception_score": 72.92,
-        "knowledge_score": 74.03
+        "genuine_accuracy_score": 44.96,
+        "average_score": 74.61,
+        "origin_score": 80.54,
+        "perception_score": 72.2,
+        "knowledge_score": 71.09
     },
     "Macro_Average": {
-        "genuine_accuracy_score": 28.25,
-        "average_score": 61.7,
-        "origin_score": 62.76,
-        "perception_score": 62.68,
-        "knowledge_score": 59.65
+        "genuine_accuracy_score": 25.81,
+        "average_score": 59.66,
+        "origin_score": 60.53,
+        "perception_score": 61.6,
+        "knowledge_score": 56.84
     },
     "Micro_Average": {
-        "genuine_accuracy_score": 36.11,
-        "average_score": 67.51,
-        "origin_score": 71.52,
-        "perception_score": 66.0,
-        "knowledge_score": 65.01
+        "genuine_accuracy_score": 33.07,
+        "average_score": 65.34,
+        "origin_score": 68.71,
+        "perception_score": 65.11,
+        "knowledge_score": 62.21
     }
 }
 ```
