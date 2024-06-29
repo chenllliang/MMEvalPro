@@ -34,7 +34,7 @@ Trilogy Evaluation Examples in MMEvalPro
 
 🔔 To automatically evaluate a model on the dataset and compute the genuine accuracy, average accuracy and different analysis metric, we provide an example code to compute the scores given model output and groundtruth labels.
 
-The output for all questions should be saved in json file, following `./demo_model_output.json`
+The output for **all questions** should be saved in json file, following `./demo_model_output.json`
 ```json
 [
     {
