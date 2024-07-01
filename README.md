@@ -116,7 +116,7 @@ The overall score file looks like below:
 }
 ```
 
-## Leaderboard
+## [Leaderboard](https://mmevalpro.github.io/)
 <div align=center>
 <img src="./assets/results.png"/>
 All LLMs perform poorly in the benchmark due to the rigorous metric. Best performing LMM (Qwen-VL-Max, GPT4-o) still lag behind human by 30% in average Genuine Accuracy of MMEvalPro. 
