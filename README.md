@@ -63,7 +63,6 @@ The output for **all questions** should be saved in json file, following `./demo
         "eval_type": "Knowledge"
     }
 
-...
 ]
 ```
 
