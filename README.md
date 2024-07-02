@@ -138,4 +138,14 @@ The copyright of the images and the original questions belongs to the authors of
 
 ## Citation
 
-Coming Soon~
+```bib
+@misc{huang2024mmevalprocalibratingmultimodalbenchmarks,
+      title={MMEvalPro: Calibrating Multimodal Benchmarks Towards Trustworthy and Efficient Evaluation}, 
+      author={Jinsheng Huang and Liang Chen and Taian Guo and Fu Zeng and Yusheng Zhao and Bohan Wu and Ye Yuan and Haozhe Zhao and Zhihui Guo and Yichi Zhang and Jingyang Yuan and Wei Ju and Luchen Liu and Tianyu Liu and Baobao Chang and Ming Zhang},
+      year={2024},
+      eprint={2407.00468},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2407.00468}, 
+}
+```
