@@ -6,8 +6,9 @@
 <img alt="Static Badge" src="https://img.shields.io/badge/Homepage-MMEvalPro-blue">
 </a>
 
-<a href="">
-<img alt="Static Badge" src="https://img.shields.io/badge/ArXiv-2407.xxxxx-red">
+<a href="https://arxiv.org/abs/2407.00468"> 
+    <img alt="Static Badge" src="https://img.shields.io/badge/ArXiv-2407.00468-red">
+  </a>
 
 <a href="https://huggingface.co/datasets/MM-Diagnose/MMEvalPro">
 <img alt="Static Badge" src="https://img.shields.io/badge/HuggingFace Dataset-MMEvalPro-yellow">
